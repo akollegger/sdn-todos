@@ -35,11 +35,11 @@ application on Heroku.
 CLI Tool
 --------
 
-A simplistic `todos` script in the `bin` directory can directly create, delete and list todos.
+A simplistic `todo` script in the `bin` directory can directly create, delete and list todos.
 
-    Usage: todos [ list | mk | rm ]
+    Usage: todo [ list | mk | rm ]
 
-      todos list            - list current todos
-      todos mk "a new todo" - to create a todo
-      todos rm 1            - to remove the todo with id 1
+      todo list            - list current todos
+      todo mk "a new todo" - to create a todo
+      todo rm 1            - to remove the todo with id 1
 
