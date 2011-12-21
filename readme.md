@@ -26,6 +26,11 @@ export NEO4J_PASSWORD=""
 ./bin/todo list
 ```
 
+Be my Hero(ku)
+--------------
+Interested in deploying to Heroku's cloud? Then check out the `heroku-deploy` branch
+which has the needed modifications and instructions for deploying a Spring Data Neo4j
+application on Heroku.
 
 CLI Tool
 --------
