@@ -1,7 +1,7 @@
 #!/bin/sh
 
 APP_HOST=${APP_HOST:="localhost:8080"}
-APP_BASE=${APP_BASE:="/api/"}
+APP_BASE=${APP_BASE:="/"}
 APP_URL="http://${APP_HOST}${APP_BASE}"
 REST_ENDPOINT="${APP_URL}todos"
 CURL_OPTS="--verbose --fail -H Accept:application/json -H Content-Type:application/json"
