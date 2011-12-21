@@ -1,8 +1,18 @@
 #!/bin/sh
 
-APP_HOST=${APP_HOST:="localhost:8080"}
-APP_BASE=${APP_BASE:="/"}
-APP_URL="http://${APP_HOST}${APP_BASE}"
+while getopts ":r" opt; do
+  case $opt in
+    r)
+      export APP_URL=`heroku info --raw | sed -n 's/^web_url=\(.*\)$/\1/p'`
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+  shift
+done
+
+APP_URL=${APP_URL:="http://localhost:8080/api"}
 REST_ENDPOINT="${APP_URL}todos"
 CURL_OPTS="--verbose --fail -H Accept:application/json -H Content-Type:application/json"
 
