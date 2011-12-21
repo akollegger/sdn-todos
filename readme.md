@@ -83,3 +83,12 @@ A simplistic `todo` script in the `bin` directory can directly create, delete an
       todo mk "a new todo" - to create a todo
       todo rm 1            - to remove the todo with id 1
 
+Diff from 'master'
+------------------
+
+For a play-by-play of the steps used to create this Heroku-ized branch, check
+out [Becoming a Heroku](http://github.com/akollegger/sdn-todos/wiki/Becoming-a-Hero\(ku\)).
+
+To see all the little changes, look at the branch diff: https://github.com/akollegger/sdn-todos/compare/master...heroku-deploy
+
+
