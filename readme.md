@@ -89,3 +89,6 @@ Diff from 'master'
 For a play-by-play of the steps used to create this Heroku-ized branch, check
 out [Becoming a Heroku](http://github.com/akollegger/sdn-todos/wiki/Becoming-a-Hero\(ku\)).
 
+To see all the little changes, look at the branch diff: https://github.com/akollegger/sdn-todos/compare/master...heroku-deploy
+
+
