@@ -26,6 +26,8 @@ Interested in deploying to Heroku's cloud? Then check out the `heroku-deploy` br
 which has the needed modifications and instructions for deploying a Spring Data Neo4j
 application on Heroku.
 
+For a detailed play-by-play, read [Becoming a Heroku](https://github.com/akollegger/sdn-todos/wiki/Becoming-a-Hero(ku))
+
 CLI Tool
 --------
 
