@@ -87,5 +87,5 @@ Diff from 'master'
 ------------------
 
 For a play-by-play of the steps used to create this Heroku-ized branch, check
-out [Becoming a Heroku](wiki/Becoming-a-Hero\(ku\)).
+out [Becoming a Heroku](http://github.com/akollegger/sdn-todos/wiki/Becoming-a-Hero\(ku\)).
 
