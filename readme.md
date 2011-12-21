@@ -57,16 +57,29 @@ Create a new provisioning stack on Heroku for the app.
 heroku create --stack cedar`
 heroku addons:add neo4j
 git push heroku heroku-deploy:master
+```
 
+Check to make sure it is running with `heroku ps`, which should show a `web.1` process with an "up" state.
+
+Finally try it out using the `-r` flag to indicate remote access.
+
+```bash
+./bin/todo -r mk "tweet money transfers to @akollegger"
+./bin/todo -r list
+```
+
+To see the Neo4j graph you just created through Heroku, use `heroku config` to reveal the NEO4J_URL 
+which will take you to Neo4j's Webadmin. Have fun!
 
 CLI Tool
 --------
 
 A simplistic `todo` script in the `bin` directory can directly create, delete and list todos.
 
-    Usage: todo [ list | mk | rm ]
+    Usage: todo [-r] [ list | mk | rm ]
 
-      todos list            - list current todos
-      todos mk "a new todo" - to create a todo
-      todos rm 1            - to remove the todo with id 1
+      todo -r              - access the remote (Heroku) todo application
+      todo list            - list current todos
+      todo mk "a new todo" - to create a todo
+      todo rm 1            - to remove the todo with id 1
 
