@@ -1,26 +1,31 @@
 Spring Data Neo4j Todos
 =======================
 
-Backend persistence for the Ember (formerly SproutCore) demo application.
+A simple todos application using Spring Data Neo4j (inspired by the SproutCore demo application),
+with a simple command-line bash script interface.
 
 Local build and run
 -------------------
 
 * Run a local neo4j server
 
-`export NEO4J_REST_URL=http://localhost:7474/db/data`
-`export NEO4J_LOGIN=""`
-`export NEO4J_PASSWORD=""`
+```bash
+export NEO4J_REST_URL=http://localhost:7474/db/data
+export NEO4J_LOGIN=""
+export NEO4J_PASSWORD=""
+```
 
 * Build, then run
 
-`mvn package`
-`sh target/bin/webapp`
+`mvn clean package jetty:run-war`
 
-Deploy on heroku
-----------------
+* Try it out
 
-Heroku will use the `Procfile` to run the generated shell script which starts up the webserver.
+```bash
+./bin/todo mk "get ready for cloud deployment"
+./bin/todo list
+```
+
 
 CLI Tool
 --------
