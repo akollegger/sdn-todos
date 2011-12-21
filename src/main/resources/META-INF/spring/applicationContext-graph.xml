@@ -13,14 +13,8 @@
     <neo4j:repositories base-package="org.akollegger.neo4j.scsdn"/>
     <tx:annotation-driven mode="aspectj"/>
     
-    <neo4j:config graphDatabaseService="graphDatabaseService"/>
+    <neo4j:config storeDirectory="target/todos.graphdb"/>
     
- 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"/>
-	<bean id="graphDatabaseService" 
-		class="org.springframework.data.neo4j.rest.SpringRestGraphDatabase">
-		<constructor-arg index="0" value="${NEO4J_REST_URL}" />
-		<constructor-arg index="1" value="${NEO4J_LOGIN}" />
-		<constructor-arg index="2" value="${NEO4J_PASSWORD}" />
-    </bean>
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"/>
       
 </beans>

@@ -4,7 +4,7 @@
     
     <display-name>sproutcore-sdn</display-name>
     
-    <description>Neo4j SDN backed todo service</description>
+    <description>Neo4j SDN Todo Application</description>
 
     
     <!-- Enable escaping of form submission contents -->
