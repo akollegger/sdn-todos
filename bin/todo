@@ -12,7 +12,7 @@ while getopts ":r" opt; do
   shift
 done
 
-APP_URL=${APP_URL:="http://localhost:8080/api"}
+APP_URL=${APP_URL:="http://localhost:8080/"}
 REST_ENDPOINT="${APP_URL}todos"
 CURL_OPTS="--verbose --fail -H Accept:application/json -H Content-Type:application/json"
 

@@ -45,6 +45,8 @@ sh target/bin/webapp
 ./bin/todo list
 ```
 
+Satisfied? Then `ctrl-c` to kill the application.
+
 
 Deploy on Heroku
 ----------------
