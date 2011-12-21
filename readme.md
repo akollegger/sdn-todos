@@ -9,13 +9,7 @@ Local build and run
 
 * Run a local neo4j server
 
-```bash
-export NEO4J_REST_URL=http://localhost:7474/db/data
-export NEO4J_LOGIN=""
-export NEO4J_PASSWORD=""
-```
-
-* Build, then run
+* Build, then run the todo application
 
 `mvn clean package jetty:run-war`
 
