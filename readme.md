@@ -69,7 +69,7 @@ Finally try it out using the `-r` flag to indicate remote access.
 ```
 
 To see the Neo4j graph you just created through Heroku, use `heroku config` to reveal the NEO4J_URL 
-which will take you to Neo4j's Webadmin. Have fun!
+which can take you to Neo4j's Webadmin. Have fun!
 
 CLI Tool
 --------
