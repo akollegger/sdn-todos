@@ -1,7 +1,7 @@
 Spring Data Neo4j Todos
 =======================
 
-Backend persistence for the Ember (formerly SproutCore) demo application.
+A simple todo list using Spring Data Neo4j.
 
 Local build and run
 -------------------
@@ -12,13 +12,24 @@ Local build and run
 `export NEO4J_LOGIN=""`
 `export NEO4J_PASSWORD=""`
 
-* Build, then run
+* Build, then run locally
 
 `mvn package`
 `sh target/bin/webapp`
 
-Deploy on heroku
+Become a Hero(ku)
+-----------------
+
+* Create an account on [Heroku](http://heroku.com)
+* Install the `heroku` command-line client
+* See the [Heroku Quickstart](http://devcenter.heroku.com/articles/quickstart) for details
+
+Deploy on Heroku
 ----------------
+
+Create a new provisioning stack on Heroku for the app.
+`heroku create --stack cedar`
+
 
 Heroku will use the `Procfile` to run the generated shell script which starts up the webserver.
 
