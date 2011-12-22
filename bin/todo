@@ -13,7 +13,7 @@ while getopts ":r" opt; do
 done
 
 APP_URL=${APP_URL:="http://localhost:8080/sdn-todos/"}
-REST_ENDPOINT="${APP_URL}todos"
+REST_ENDPOINT="${APP_URL}api/todos"
 CURL_OPTS="--verbose --fail -H Accept:application/json -H Content-Type:application/json"
 
 list() {
