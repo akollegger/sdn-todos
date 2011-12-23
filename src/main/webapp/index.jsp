@@ -45,7 +45,7 @@
 	<div class="container">
 		<div class="sixteen columns">
 			<h1 class="remove-bottom" style="margin-top: 40px">SDN Todos</h1>
-			<h5>variant: baseline war</h5>
+			<h5>variant: heroku-deploy</h5>
 			<hr />
 		</div>
 		<div class="row">
@@ -57,7 +57,7 @@
 				</p>
 			</div>
 			<div class="one-third column">
-				<h3>Three Highlights</h3>
+				<h3>Variant Highlights</h3>
 				<p>SDN Todos is built to demonstrate the simplicity of SDN:</p>
 				<ul class="square">
 					<li><strong>@NodeEntity Todo</strong>: Simple annotated POJO mapped to persist in Neo4j</li>
