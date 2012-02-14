@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/knockout.css">
 
 	<!-- Favicons
 	================================================== -->
@@ -45,7 +46,7 @@
 	<div class="container">
 		<div class="sixteen columns">
 			<h1 class="remove-bottom" style="margin-top: 40px">SDN Todos</h1>
-			<h5>variant: baseline war</h5>
+			<h5>variant: knockout</h5>
 			<hr />
 		</div>
 		<div class="row">
@@ -74,13 +75,25 @@
 		</div>
 				
 		<!-- UI -->
-		<div class="row">
-			<h5>Todos</h5>
-			
-			<div id="todos">
+		<div id="todos" class="row">
+			<h3>Todos</h3>
+
+      <div class="one-third column">
+        <form data-bind="submit:addItem">
+          Add item: <input type="text" data-bind='value:itemToAdd, valueUpdate: "afterkeydown"' />
+          <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+        </form>
+      </div>
+
+      <div class="one-third column">
+        <select multiple="multiple" height="5" data-bind="options:allItems, selectedOptions:selectedItems"> </select>
+        <button data-bind="click: removeSelected, enable: selectedItems().length > 0">Remove</button>
+        <button data-bind="click: sortItems, enable: allItems().length > 1">Sort</button>
+      </div>
+
+      <div class="one-third column">
+        <button data-bind="click: refreshItems">Refresh</button>
 			</div>
-		
-			<hr />
 		</div>
 		
 		<!--  footer  -->
@@ -100,6 +113,7 @@
 	<!-- JS
 	================================================== -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="javascripts/knockout-2.0.0.js"></script>
 	<script src="javascripts/sdn-todos.js"></script>
 
 <!-- End Document

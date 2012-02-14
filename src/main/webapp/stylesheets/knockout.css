@@ -1,0 +1,10 @@
+/* @override http://localhost:8080/sdn-todos/stylesheets/knockout.css */
+
+#todos
+{
+	background: #d5d3ae;
+}
+#todos h3
+{
+	padding: 0.5em;
+}
